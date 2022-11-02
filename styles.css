@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --dark:#333;
+    --dark-gray:#4f4f4f;
+    --white:#fff;
+}
+.logo{
+   color: var(--dark);
+}
+
+/* Body */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.85rem 5.5rem;
+    background: var(--white);
+}
+
+/* header*/
+.header{
+    align-self: flex-start;
+}
+.header .logo{
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: -0.08rem;
+    text-transform: uppercase;
+}
+
+/* Container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*image */
+.imagen img{
+    width: 540px;
+    height: auto;
+}
+
+/* Main */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Space mono',monospace;
+    width: 560px;
+    margin-left: 8rem;
+}
+.title{
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+}
+.info{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035rem;
+    max-width: 382px;
+    padding: 2.57rem 0 4.57rem 0;
+    color: var(--dark-gray);
+}
+
+.button_home{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.035rem;
+    width: max-content;
+    padding: 1.6rem 3rem;
+    color: var(--white);
+    background-color: var(--dark);
+}
+.button_home:hover{
+    background-color: var(--dark-gray);
+}
